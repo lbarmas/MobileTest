@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+    <com.github.pavlospt.roundedletterview.RoundedLetterView
+        android:id="@+id/r_letter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:rlv_titleColor="@color/white"
+        app:rlv_backgroundColorValue="@color/purple_700"
+        app:rlv_titleSize="16sp"
+        tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtNPhNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toTopOf="@id/linearLayout"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_margin="25dp"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@+id/txtNPhNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtNPhNo"/>
+
+</LinearLayout>

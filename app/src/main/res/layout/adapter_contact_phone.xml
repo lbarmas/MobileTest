@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        tools:ignore="UseCompoundDrawables">
+
+            <com.github.pavlospt.roundedletterview.RoundedLetterView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/r_letter"
+                android:layout_width="35dp"
+                android:layout_gravity="center"
+                android:layout_height="35dp"
+                app:rlv_titleColor="@color/white"
+                app:rlv_backgroundColorValue="@color/purple_700"
+                app:rlv_titleSize="16sp"
+                tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Juan Ramos"
+            android:textAppearance="@android:style/TextAppearance" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

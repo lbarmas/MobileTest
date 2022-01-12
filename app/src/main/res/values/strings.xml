@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PostsMobileTest</string>
+    <string name="contacts_list">Contact Phone</string>
+    <string name="save">SAVE</string>
+</resources>
